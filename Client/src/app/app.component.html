@@ -1,0 +1,17 @@
+{{title}}
+
+<ul>
+    <li *ngFor="let data of user">
+{{data.id}} - {{data.userName}}
+    </li>
+</ul>
+
+
+
+<ul>
+@for (item of user; track $index) {
+
+<li>{{item.id}} - {{item.userName}}</li>
+}
+
+</ul>
